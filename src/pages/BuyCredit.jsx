@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext } from 'react'
 import { assets, plans } from '../assets/assets'
 import { AppContext } from '../context/AppContext';
@@ -42,6 +43,14 @@ const BuyCredit = () => {
       </div>
     </motion.div>
   );
+=======
+import React from 'react'
+
+const BuyCredit = () => {
+  return (
+    <div>BuyCredit</div>
+  )
+>>>>>>> origin/main
 }
 
 export default BuyCredit

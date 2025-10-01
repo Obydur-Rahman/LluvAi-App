@@ -1,5 +1,6 @@
 import React from 'react'
 import { stepsData } from '../assets/assets'
+<<<<<<< HEAD
 import { motion } from "motion/react";
 
 const Steps = () => {
@@ -11,6 +12,12 @@ const Steps = () => {
       viewport={{ once: true }}
     
     className='flex flex-col items-center justify-center my-32 '>
+=======
+
+const Steps = () => {
+  return (
+    <div className='flex flex-col items-center justify-center my-32 '>
+>>>>>>> origin/main
       <h1 className='text-3xl sm:text-4xl font-semibold mb-2'>How it works</h1>
 
       <p className='text-lg text-gray-600 mb-8 '>Transform Words Into Stunning Images </p>
@@ -26,7 +33,11 @@ const Steps = () => {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
     </motion.div>
+=======
+    </div>
+>>>>>>> origin/main
   )
 }
 

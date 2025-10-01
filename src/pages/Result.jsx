@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+<<<<<<< HEAD
 import { motion } from "motion/react";
+=======
+>>>>>>> origin/main
 
 const Result = () => {
 
@@ -23,6 +26,7 @@ const Result = () => {
 
 
   return (
+<<<<<<< HEAD
     <motion.form
       initial={{ opacity: 0.2, y: 100 }}
       transition={{ duration: 1 }}
@@ -31,13 +35,20 @@ const Result = () => {
       onSubmit={onSubmitHandler}
       className="flex flex-col min-h-[90vh] justify-center items-center"
     >
+=======
+    <form onSubmit={onSubmitHandler} className="flex flex-col min-h-[90vh] justify-center items-center">
+>>>>>>> origin/main
       <div>
         <div className="relative">
           <img src={image} alt="" className="max-w-sm rounded " />
           <span
+<<<<<<< HEAD
             className={`absolute bottom-0 left-0 h-1 bg-blue-500 ${
               loading ? " w-full transition-all duration-[10s] " : "w-0"
             }`}
+=======
+            className={`absolute bottom-0 left-0 h-1 bg-blue-500 ${loading ? ' w-full transition-all duration-[10s] ' : 'w-0'}`}
+>>>>>>> origin/main
           ></span>
         </div>
         <p className={!loading ? "hidden" : ""}>Loading.....</p>
@@ -46,8 +57,12 @@ const Result = () => {
       {!isImageLoaded && (
         <div className="flex w-full  max-w-xl bg-neutral-500 text-white text-sm p-0.5 mt-10 rounded-full">
           <input
+<<<<<<< HEAD
             onChange={(e) => setInput(e.target.value)}
             value={input}
+=======
+            onChange={e => setInput(e.target.value)} value={input}
+>>>>>>> origin/main
             type="text"
             placeholder="Describe what you want to generate"
             className="flex-1 bg-transparent outline-none ml-8 max-sm:w-20"
@@ -80,7 +95,11 @@ const Result = () => {
           </a>
         </div>
       )}
+<<<<<<< HEAD
     </motion.form>
+=======
+    </form>
+>>>>>>> origin/main
   );
 }
 
