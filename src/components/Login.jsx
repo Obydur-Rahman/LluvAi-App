@@ -1,7 +1,10 @@
 import React,{ useContext,useEffect, useState} from 'react'
 import { assets } from '../assets/assets'
 import{AppContext} from '../context/AppContext'
+<<<<<<< HEAD
 import { motion } from "motion/react";
+=======
+>>>>>>> origin/main
 
 const Login = () => {
 
@@ -18,6 +21,7 @@ const Login = () => {
     }
   },[])
   return (
+<<<<<<< HEAD
     <div className="fixed top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center">
       <motion.form
         initial={{ opacity: 0.2, y: 50}}
@@ -26,6 +30,10 @@ const Login = () => {
         viewport={{ once: true }}
         className="relative bg-white p-10 rounded-xl text-slate-500"
       >
+=======
+    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center">
+      <form className="relative bg-white p-10 rounded-xl text-slate-500">
+>>>>>>> origin/main
         <h1 className="text-center text-2xl text-neutral-700 font-medium">
           {state}
         </h1>
@@ -93,13 +101,21 @@ const Login = () => {
           </p>
         )}
 
+<<<<<<< HEAD
         <img
           onClick={() => setShowLogin(false)}
+=======
+        <img onClick={()=>setShowLogin(false)}
+>>>>>>> origin/main
           src={assets.cross_icon}
           alt=""
           className="absolute top-5 right-5 cursor-pointer"
         />
+<<<<<<< HEAD
       </motion.form>
+=======
+      </form>
+>>>>>>> origin/main
     </div>
   );
 }

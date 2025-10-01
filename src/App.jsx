@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useContext } from "react";
 =======
 import React from "react";
+>>>>>>> origin/main
+=======
+import React, { useContext } from "react";
 >>>>>>> origin/main
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -9,6 +13,7 @@ import BuyCredit from "./pages/BuyCredit";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+<<<<<<< HEAD
 <<<<<<< HEAD
 import Login from "./components/Login";
 import { AppContext } from "./context/AppContext";
@@ -21,11 +26,21 @@ const App = () => {
       <Navbar />
       {showLogin && <Login />}
 =======
+=======
+import Login from "./components/Login";
+import { AppContext } from "./context/AppContext";
+>>>>>>> origin/main
 
 const App = () => {
+
+  const { showLogin } = useContext(AppContext);
   return (
     <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-teal-50 to-orange-50">
       <Navbar />
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+      {showLogin && <Login />}
 >>>>>>> origin/main
       <Routes>
         <Route path="/" element={<Home />} />

@@ -5,6 +5,7 @@ export const AppContext = createContext()
 const AppContextProvider = (props) => {
     const[user, setUser] = useState(null);
 <<<<<<< HEAD
+<<<<<<< HEAD
     const[showLogin, setShowLogin] = useState(false);
 
     const value = {
@@ -18,6 +19,16 @@ const AppContextProvider = (props) => {
     const value = {
         user, setUser
     }
+>>>>>>> origin/main
+=======
+    const[showLogin, setShowLogin] = useState(false);
+
+    const value = {
+      user,
+      setUser,
+      showLogin,
+      setShowLogin
+    };
 >>>>>>> origin/main
     return(
 

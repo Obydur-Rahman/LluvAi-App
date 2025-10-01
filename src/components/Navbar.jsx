@@ -4,9 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 const Navbar = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const{ user , setShowLogin} = useContext(AppContext);
 =======
   const{ user } = useContext(AppContext);
+>>>>>>> origin/main
+=======
+  const{ user , setShowLogin} = useContext(AppContext);
 >>>>>>> origin/main
 
   const navigate = useNavigate();
@@ -15,9 +19,13 @@ const Navbar = () => {
       {/* Logo */}
       <Link to="/">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <img src={assets.logo_icon} alt="" className="w-28 sm:w-32 lg:w-40" />
 =======
         <img src={assets.logo} alt="" className="w-28" sm:w-32 lg:w-40 />
+>>>>>>> origin/main
+=======
+        <img src={assets.logo_icon} alt="" className="w-28 sm:w-32 lg:w-40" />
 >>>>>>> origin/main
       </Link>
 
@@ -27,10 +35,14 @@ const Navbar = () => {
           // logout
           <div className="flex items-center gap-2 sm:gap-3">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
             <button
               onClick={() => navigate("/buy")}
               className="flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700"
             >
+<<<<<<< HEAD
               <img className="w-5 " src={assets.credit_star} alt="" />
               <p className="text-xs sm:text-sm font-medium text-gray-600">
                 Credits left: 50
@@ -39,6 +51,12 @@ const Navbar = () => {
             <button onClick={() => navigate("/buy")} className="flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700">
               <img className="w-5 " src={assets.credit_star} alt="" />
               <p className="text-xs sm:text-sm font-medium text-gray-600">Credits left: 50</p>
+>>>>>>> origin/main
+=======
+              <img className="w-5 " src={assets.credit_star} alt="" />
+              <p className="text-xs sm:text-sm font-medium text-gray-600">
+                Credits left: 50
+              </p>
 >>>>>>> origin/main
             </button>
             <p className="text-gray-600 max-sm:hidden pl-4">Hi, Obydur</p>
@@ -54,13 +72,19 @@ const Navbar = () => {
             top-0 right-0 z-10 text-black rounded pt-12 "
               >
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
                 <ul
                   className="list-none
                 m-0 p-2 bg-white rounded-md border text-sm"
                 >
+<<<<<<< HEAD
 =======
                 <ul className="list-none
                 m-0 p-2 bg-white rounded-md border text-sm">
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
                   <li className="py-1 px-2 cursor-pointer pr-10">Logout</li>
                 </ul>
@@ -74,12 +98,18 @@ const Navbar = () => {
               pricing
             </p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
             <button
               onClick={() => setShowLogin(true)}
               className="bg-zinc-800 text-white px-7 py-2 sm:px-10 text-sm rounded-full"
             >
+<<<<<<< HEAD
 =======
             <button className="bg-zinc-800 text-white px-7 py-2 sm:px-10 text-sm rounded-full">
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
               Login
             </button>
