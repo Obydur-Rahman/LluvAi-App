@@ -1,0 +1,123 @@
+.payment-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.payment-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.payment-card.selected {
+  border-color: #667eea;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.method-badge {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.info-row .label {
+  color: #666;
+  font-weight: 600;
+  flex: 1;
+}
+
+.info-row .value {
+  color: #333;
+  flex: 1;
+  text-align: right;
+  word-break: break-word;
+}
+
+.info-row .amount {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.info-row .txn-id {
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  color: #667eea;
+}
+
+.card-footer {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review-btn {
+  flex: 1;
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.review-btn:hover {
+  background: #5568d3;
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info-row .value {
+    text-align: left;
+  }
+}
